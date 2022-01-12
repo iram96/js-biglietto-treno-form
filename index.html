@@ -18,26 +18,29 @@
             <div class="bg-white" id="input-section">
                 <div class="row p-5">
                     <div class="col">
-                        <label for="flname"  class="w-100">Nome e Cognome</label>
+                        <label for="flname"  class="w-100" id="flname-label" >Nome e Cognome</label>
                         <input type="text" id="flname">
                     </div>
                     <div class="col">
                         <label for="kmtodo" class="w-100">KM da percorrere</label>
                         <input type="number" id="kmtodo">
+                        
                     </div>
                     <div class="col text-center">
                         <label for="agecheck" class="w-100">Quanti anni hai?</label>
                         <select name="agecheck" id="agecheck">
                         <option value="over18">Maggiorenne</option>
                         <option value="under18">Minorenne</option>
+                        <option value="over65">Over 65</option>
                         </select>
                     </div>
                 </div>
                 <div class="row p-5">
                     <div class="col-1 g-2 offset-5">
-                        <button type="button" class="me-3 btn btn-secondary">Genera</button></div>
+                        
+                        <button type="button" class="me-3 btn btn-secondary" id="create">Genera</button></div>
                     <div class="col-1 g-2">
-                        <button type="button" class="ms-3 btn btn-secondary">Annulla</button></div>
+                        <button type="button" class="ms-3 btn btn-secondary" onclick="document.getElementById('flname').value = '', document.getElementById('kmtodo').value = '', document.getElementById('agecheck').value = '' ">Annulla</button></div>
                 </div>
 
             </div>
@@ -47,24 +50,24 @@
                     <h4>DETTAGLI PASSEGGERI</h4>
                     <div class="row" id="user-details">
                         <div class="col-4 bg-secondary">
-                            <h3>NOME PASSEGGERO</h3>
-                            <p id="user-name">///</p>
+                            <h3 class="mb-5">NOME PASSEGGERO</h3>
+                            <p id="user-name"></p>
                         </div>
                         <div class="col-2">
                             <h5 class="mb-5">Offerta</h5>
-                            <p>///  </p>
+                            <p id="offer">Abbonamento Standard</p>
                         </div>
                         <div class="col-2">
                             <h5 class="mb-5">Carrozza</h5>
-                            <p>///  </p>
+                            <p id="ncarriage">/// </p>
                         </div>
                         <div class="col-2">
                             <h5 class="mb-5">Codice CP</h5>
-                            <p>///  </p>
+                            <p id="cpcode">///  </p>
                         </div>
                         <div class="col-2">
                             <h5 class="mb-5">Costo Biglietto</h5>
-                            <p>///  </p>
+                            <p id="ticket-price">&euro;  ///  </p>
                         </div>
                        
                     </div>
@@ -73,6 +76,6 @@
             </div>
         </div>
     </div>
-    <!-- <script src="js/fizzbuzz.js"></script> -->
+    <script src="js/ticket.js"></script>
 </body>
 </html>
