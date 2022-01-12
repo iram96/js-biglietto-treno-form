@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+body {
+  max-width: 1200px;
+  background-color: #b91450;
+  margin: 0 auto;
+}
+
+#input-section {
+  width: 100%;
+  border-radius: 20px;
+  min-height: 100px;
+}
+
+.user-details-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#user-details {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
